@@ -39,7 +39,7 @@ export const theme = themes.future;
 
 - aims at ensuring that the most important functions work
 
-**The result of running smoke tests can be used to decide if a build is stable.**
+The result of running smoke tests can be used to decide if a build is stable.
 
 </Layout>
 
@@ -81,25 +81,6 @@ export const theme = themes.future;
 
 <Layout>
 
-## Takeaway
-
-Smoke tests can help you :)
-
-**Monitoring and availability**
-Periorically run smoke tests to ensure the availability of systems
-
-**Validating structural changes**
-Ensuring all systems are working as expected after a major infrastructural change (e.g. the migration of WRI API to AWS)
-
-**Cross-reference bugs**
-Using retained data from smoke tests you can cross-reference reported bugs and see if they might have been caused by a system failure
-
-</Layout>
-
----
-
-<Layout>
-
 ## Different providers
 
 TODO
@@ -113,6 +94,36 @@ TODO
 ## How it works in AWS Synthetics
 
 TODO
+
+</Layout>
+
+---
+
+<Layout>
+
+## Takeaway
+
+<Box alignItems="left" paddingTop="16px">
+  <Box paddingRight="16px" paddingBottom="16px">
+    <b>Monitoring and availability</b>
+    <br />
+    <span>Periorically run smoke tests to ensure the availability of systems</span>
+  </Box>
+
+  <Box paddingRight="16px" paddingBottom="16px">
+    <b>Validating structural changes</b>
+    <br />
+    <span>Having smoke tests helps ensuring everything is working as expected after a major infrastructural change (e.g. the migration of WRI API to AWS)</span>
+  </Box>
+
+  <Box paddingRight="16px" paddingBottom="16px">
+    <b>Cross-reference bugs</b>
+    <br />
+    <span>Using retained data from smoke test runs you can cross-reference reported bugs and see if they might have been caused by a system failure</span>
+  </Box>
+</Box>
+
+Smoke tests can help you :v:
 
 </Layout>
 
