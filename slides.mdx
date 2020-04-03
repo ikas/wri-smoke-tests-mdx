@@ -1,45 +1,125 @@
 import { themes } from 'mdx-deck'
+import { Box, Heading } from 'theme-ui'
+
+import Layout from './layout'
+import qaPic from './pictures/qa-pic.png';
+import qaPicWithSmoke from './pictures/qa-pic-with-smoke.png';
 
 export const theme = themes.future;
 
-<Header>
+<Layout>
+  <Header>
+    <img
+      src="https://www.vizzuality.com/wp-content/themes/vizzuality_2/images/logo-white.svg"
+      alt="Vizzuality"
+      style={{ height: '70px', width: '100px' }}
+    />
+  </Header>
+
+  # Smoke Testing
+
+  <Box>(Or how we did it for the WRI API)</Box>
+
   <img
-    src="https://www.vizzuality.com/wp-content/themes/vizzuality_2/images/logo-white.svg"
-    alt="Vizzuality"
-    style={{ height: '70px', width: '100px' }}
+    src="https://i.pinimg.com/originals/d5/3b/bf/d53bbfc6a4f65f6a37691fa4541a9fee.gif"
+    alt="Smoke signs"
+    style={{ height: '45vh', marginTop: '2rem' }}
   />
-</Header>
-
-# WRI API Smoke Testing
-
-<img
-  src="https://i.pinimg.com/originals/d5/3b/bf/d53bbfc6a4f65f6a37691fa4541a9fee.gif"
-  alt="Smoke signs"
-  style={{ height: '45vh', marginTop: '2rem' }}
-/>
+</Layout>
 
 ---
 
-# What is smoke testing?
+<Layout>
 
-- aka “Build Verification Testing”
+## What is smoke testing?
 
-- a non-exhaustive set of tests
+- a.k.a. “Build Verification Testing”
 
-- aims at ensuring that the most important functions work.
+- a non-exhaustive set of tests (== no need to cover ALL of the features)
 
-**The result of running these tests can be used to decide if a build is stable enough.**
+- aims at ensuring that the most important functions work
+
+**The result of running smoke tests can be used to decide if a build is stable.**
+
+</Layout>
 
 ---
 
-# Think of it like... smoke signs 💨
+<Layout>
 
-- They run usually out of sight
+## Think of it like... smoke signs 💨
+
+- Usually you don't see them running
 
 - You get notified in case of failure
 
-- So if you see smoke, it means that probably there's a fire :fire:
+- So if you see smoke, it means that probably there's a :fire::fire::fire:
+
+</Layout>
 
 ---
 
-# Thank you :bow:
+<Layout>
+
+## Smoke testing in the QA world
+
+<img src={qaPic} style={{ height: '60vh' }} />
+
+</Layout>
+
+---
+
+<Layout>
+
+## Smoke testing in the QA world
+
+<img src={qaPicWithSmoke} style={{ height: '60vh' }} />
+
+</Layout>
+
+---
+
+<Layout>
+
+## Takeaway
+
+Smoke tests can help you :)
+
+**Monitoring and availability**
+Periorically run smoke tests to ensure the availability of systems
+
+**Validating structural changes**
+Ensuring all systems are working as expected after a major infrastructural change (e.g. the migration of WRI API to AWS)
+
+**Cross-reference bugs**
+Using retained data from smoke tests you can cross-reference reported bugs and see if they might have been caused by a system failure
+
+</Layout>
+
+---
+
+<Layout>
+
+## Different providers
+
+TODO
+
+</Layout>
+
+---
+
+<Layout>
+
+## How it works in AWS Synthetics
+
+TODO
+
+</Layout>
+
+---
+
+<Layout>
+
+## Thank you :bow:
+
+</Layout>
