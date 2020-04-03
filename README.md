@@ -8,6 +8,14 @@ This repo contains a small presentation for the framework for building smoke tes
 yarn install
 ```
 
+## Building the presentation
+
+```bash
+yarn build
+```
+
+Output is generated in the `public` directory.
+
 ## Running the presentation
 
 ```bash
